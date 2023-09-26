@@ -1,14 +1,13 @@
 
 
-for( var i =0 ; i< document.querySelectorAll(".drum").length; i++){
-document.querySelectorAll(".drum")[i].addEventListener("click",function (){
+$(".drum").click(function (){
    var buttonInnerHTML = this.innerHTML;
     makeSound(buttonInnerHTML);
     buttonAnim(buttonInnerHTML);
     }  );
-}   
+   
 
-document.addEventListener("keydown", function(event){
+$(document).keypress(function(event){
     makeSound(event.key);
     buttonAnim(event.key);
 })

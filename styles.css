@@ -1,8 +1,8 @@
 body {
   text-align: center;
-  background: linear-gradient(300deg,#42275a,#734b6d);
-  background-size: 180% 180%;  
+  background: linear-gradient(300deg,#42275a,#734b6d);  
   animation: gradient-animation 10s ease infinite;
+  background-attachment: fixed;
 }
 @keyframes gradient-animation {
   0% {
@@ -15,8 +15,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
-
 
 h1 {
   font-size: 5rem;
@@ -37,10 +35,12 @@ footer {
 
 .w {
   background-image: url("images/tom1.png");
+  background-position: center;
 }
 
 .a {
   background-image: url("images/tom2.png");
+  background-position: center;
 }
 
 .s {
@@ -61,24 +61,25 @@ footer {
 
 .l {
   background-image: url("images/kick.png");
+ 
 }
 
 .set {
-  margin: 10% auto;
+  margin: 10px; 
+  text-align: center;
+  background-repeat: no-repeat;
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #dd91d2;
+  box-shadow: 0 3px 4px 0 #d88fcd;
   opacity: 0.5;
-}
-
-.red {
-  color: red;
 }
 
 .drum {
@@ -89,12 +90,36 @@ footer {
   line-height: 2;
   font-weight: 900;
   color: wheat;
-  text-shadow: 3px 0 #734b6d;
+  text-shadow: 3px 0 #DA0463;
   border-radius: 15px;
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   text-align: center;
   margin: 10px;
-  background-color: white;
+  background-color: #734b6d;
+  background-repeat: no-repeat;
+}
+
+
+
+@media(max-width : 680px) {
+  .drum {
+    outline: none;
+    border: 10px solid #42275a;
+    font-size: 5rem;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: wheat;
+    text-shadow: 3px 0 #DA0463;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: #734b6d;
+  }
+  
 }
