@@ -36,10 +36,12 @@ footer {
 
 .w {
   background-image: url("images/tom1.png");
+  background-position: center;
 }
 
 .a {
   background-image: url("images/tom2.png");
+  background-position: center;
 }
 
 .s {
@@ -91,7 +93,6 @@ footer {
   color: wheat;
   text-shadow: 3px 0 #DA0463;
   border-radius: 15px;
-  display: inline-block;
   width: 200px;
   height: 200px;
   text-align: center;
@@ -100,30 +101,3 @@ footer {
   background-repeat: no-repeat;
 }
 
-
-
-@media screen and (max-width : 680px) {
-  .set{
-    display: inline;
-  }
-  .drum {
-    outline: none;
-    border: 10px solid #42275a;
-    font-size: 2.5rem;
-    font-family: 'Arvo', cursive;
-    line-height: 2;
-    font-weight: 900;
-    color: wheat;
-    text-shadow: 3px 0 #DA0463;
-    border-radius: 15px;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    margin: 10px;
-    background-color: #734b6d;
-    margin-left: 20px;
-    margin-right: 20px;
-   }
-
-}
